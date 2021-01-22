@@ -82,12 +82,10 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource {
         case selectedIndexPath:
             cell.checkMarkButton.isHidden = false
             guard let text = cell.titleLabel.text else {return UITableViewCell()}
-            let cellTitleText = "Вы выбрали - \(text))"
-            selectedTitleString = cellTitleText
+            selectedTitleString = "Вы выбрали - \(text))"
         default:
             cell.checkMarkButton.isHidden = true
         }
-        
         return cell
     }
     
@@ -108,7 +106,6 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension ProductsViewController {
     @objc func didPressChooseButton() {
-        
         let alert = UIAlertController(title: selectedTitleString, message: nil, preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(alertAction)

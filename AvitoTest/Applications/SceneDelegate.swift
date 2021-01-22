@@ -19,17 +19,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = mainVC
         window?.makeKeyAndVisible()
     }
-    
-    /*
-     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-  
-         guard let windowScene = (scene as? UIWindowScene) else { return }
-         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-         window?.windowScene = windowScene
-         let vc = ChooseAdOptionsRouter.createModule()
-         window?.rootViewController = vc
-         window?.makeKeyAndVisible()
-     }
-     */
 }
 

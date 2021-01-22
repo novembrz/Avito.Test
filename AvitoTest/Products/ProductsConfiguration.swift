@@ -8,19 +8,6 @@
 import UIKit
 
 class ProductsConfigurator: ProductsConfiguratorProtocol {
-    /*
-    func configure(with viewController: ProductsViewController) {
-        let presenter = ProductsPresenter(view: viewController)
-        let networkService = NetworkService()
-        let interactor = ProductsInteractor(presenter: presenter, networkService: networkService)
-        
-        viewController.presenter = presenter
-        presenter.interactor = interactor
-        presenter.view = viewController
-        interactor.networkService = networkService
-        interactor.presenter = presenter
-    }
- */
     
     static func createMainVC() -> UIViewController {
         
